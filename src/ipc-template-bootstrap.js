@@ -59,11 +59,11 @@ require(["js/qlik"], function(qlik) {
   //   qlik.resize();
   // });
 
-  // $(document).ready(function() {
-  //   $(".sidebarToggle").on("click", function() {
-  //     $("#sidebar").toggleClass("active");
-  //   });
-  // });
+  $(document).ready(function() {
+    $(".sidebarToggle").on("click", function() {
+      $("#sidebar").toggleClass("active");
+    });
+  });
 
   // $().ready(function() {
   //   app.field("Location").clear();
