@@ -4,7 +4,7 @@ const replace = require("gulp-token-replace");
 const userHome = require("user-home");
 
 // Mashup name
-const mashup = "fema";
+const mashup = "ipc-template-bootstrap";
 const qvffile = "FEMA Disaster Assistance Analysis (June 2018) (App Load)";
 // Local Extension Path
 const extensionpath = userHome + "\\Documents\\Qlik\\Sense\\Extensions";
@@ -12,15 +12,15 @@ const extensionpath = userHome + "\\Documents\\Qlik\\Sense\\Extensions";
 const apppath = userHome + "\\Documents\\Qlik\\Sense\\Apps";
 
 gulp.task("html", function() {
-  const replaceStringsLocal = require("./src/config/replace_local.json");
-  const replaceStringsProd = require("./src/config/replace_prod.json");
+  // const replaceStringsLocal = require("./src/config/replace_local.json");
+  // const replaceStringsProd = require("./src/config/replace_prod.json");
   gulp
     .src("src/*.html")
-    .pipe(replace({ global: replaceStringsLocal }))
+    // .pipe(replace({ global: replaceStringsLocal }))
     .pipe(gulp.dest(extensionpath + `/${mashup}`));
   gulp
     .src("src/*.html")
-    .pipe(replace({ global: replaceStringsProd }))
+    // .pipe(replace({ global: replaceStringsProd }))
     .pipe(gulp.dest(`dist/${mashup}`));
 });
 
@@ -32,15 +32,15 @@ gulp.task("css", function() {
 });
 
 gulp.task("js", function() {
-  const replaceStringsLocal = require("./src/config/replace_local.json");
-  const replaceStringsProd = require("./src/config/replace_prod.json");
+  // const replaceStringsLocal = require("./src/config/replace_local.json");
+  // const replaceStringsProd = require("./src/config/replace_prod.json");
   gulp
     .src("src/*.js")
-    .pipe(replace({ global: replaceStringsLocal }))
+    // .pipe(replace({ global: replaceStringsLocal }))
     .pipe(gulp.dest(extensionpath + `/${mashup}`));
   gulp
     .src("src/*.js")
-    .pipe(replace({ global: replaceStringsProd }))
+    // .pipe(replace({ global: replaceStringsProd }))
     .pipe(gulp.dest(`dist/${mashup}`));
 });
 
@@ -54,6 +54,13 @@ gulp.task("qext", function() {
 gulp.task("wbl", function() {
   gulp
     .src("src/*.wbl")
+    .pipe(gulp.dest(`dist/${mashup}`))
+    .pipe(gulp.dest(extensionpath + `/${mashup}`));
+});
+
+gulp.task("preview", function() {
+  gulp
+    .src("src/preview.png")
     .pipe(gulp.dest(`dist/${mashup}`))
     .pipe(gulp.dest(extensionpath + `/${mashup}`));
 });
@@ -94,6 +101,7 @@ gulp.task("default", [
   "js",
   "qext",
   "wbl",
+  "preview",
   "assets",
   "qliksenseapp",
   "zip"

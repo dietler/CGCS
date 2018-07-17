@@ -10,18 +10,11 @@ var qsprefix = window.location.pathname.substr(
   window.location.pathname.toLowerCase().lastIndexOf("/extensions") + 1
 );
 var config = {
-  host:
-    window.location.hostname === "localhost"
-      ? "rnd-sense.ipc-global.com"
-      : window.location.hostname,
-  prefix: window.location.hostname === "localhost" ? "/" : qsprefix,
-  port: window.location.hostname === "localhost" ? "443" : window.location.port,
-  isSecure:
-    window.location.hostname === "localhost"
-      ? true
-      : window.location.protocol === "https:"
+  host: window.location.hostname,
+  prefix: qsprefix,
+  port: window.location.port,
+  isSecure: window.location.protocol === "https:"
 };
-
 require.config({
   baseUrl:
     (config.isSecure ? "https://" : "http://") +
@@ -43,10 +36,13 @@ require(["js/qlik"], function(qlik) {
 
   //callbacks -- inserted here --
   //open apps -- inserted here --
-  var app = qlik.openApp("{{app.app-guid}}", config);
+  var app = qlik.openApp(
+    "FEMA Disaster Assistance Analysis (June 2018) (App Load).qvf",
+    config
+  );
 
   //get objects -- inserted here --
-  app.getObject("kpi_project_amount", "fuShND");
+  app.getObject("kpi_project_amount", "7b6b4b28-80e5-4c6e-8eb4-928d618e58c3");
 
   //create cubes and lists -- inserted here --
 

@@ -1,0 +1,9 @@
+/* Qlik Objects */
+.qvplaceholder {
+  height: 200px; /* default height for objects without an assigned height */
+  padding: 0px;
+}
+
+.qv-object * {
+  /* font-family: "Nunito", sans-serif; */
+}
