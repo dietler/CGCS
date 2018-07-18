@@ -41,12 +41,28 @@
   height: 100vh;
   z-index: 999;
   background-color: #fff;
-  border-left: 1px solid #003061;
+  border-left: 1px solid #545352;
   transition: all 0.3s;
+  filter: drop-shadow(-4px 0 12px #545352);
 }
 
 .active {
   display: block !important;
+}
+
+/* Filters */
+.filter_title {
+  font-size: 20px;
+  color: #fff;
+  background-color: #545352;
+  display: block;
+  padding: 20px;
+  margin: 0;
+  width: 100%;
+  background-image: url("assets/img/x.png");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  cursor: pointer;
 }
 
 /* Examples */
