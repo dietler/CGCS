@@ -18,6 +18,14 @@
   margin-top: 20px; /* add spacing above navigation bar */
 }
 
+.navbar-brand {
+  background-image: url("assets/img/ipc_small.png");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 10px;
+  padding-left: 50px;
+}
+
 #filters {
   background-image: url("assets/img/filters.png");
   background-repeat: no-repeat;
