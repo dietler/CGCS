@@ -64,9 +64,6 @@ require(['js/qlik'], function(qlik) {
 
   if (app) {
     app.getObject('CurrentSelections', 'CurrentSelections');
-    $('.filter-drawer-toggle, paper-menu paper-item').click(function() {
-      qlik.resize();
-    });
   } else {
     $('.current-selections-placeholder span').css('display', 'inline-block');
   }
@@ -78,6 +75,7 @@ require(['js/qlik'], function(qlik) {
   $(document).ready(function() {
     $('.sidebarToggle').on('click', function() {
       $('#sidebar').toggleClass('active');
+      qlik.resize();
     });
   });
 
