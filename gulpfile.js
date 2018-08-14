@@ -5,7 +5,7 @@ const userHome = require('user-home');
 
 // Mashup name
 const mashup = 'ipc-template-bootstrap';
-const qvffile = 'IPC Template Boostrap';
+const qvffile = 'ipc-template-bootstrap';
 // Local Extension Path
 const extensionpath = userHome + '\\Documents\\Qlik\\Sense\\Extensions';
 // Local App Path
