@@ -51,7 +51,12 @@ require(['js/qlik'], function(qlik) {
   var app = qlik.openApp('ipc-template-bootstrap.qvf', config);
 
   //get objects -- inserted here --
-  app.getObject('kpi_project_amount', '7b6b4b28-80e5-4c6e-8eb4-928d618e58c3');
+  app.getObject('chart_duration', 'qrPkAT');
+  app.getObject('filter_bikeid', 'JMSFuZf');
+  app.getObject('filter_usertype', 'RpBJx');
+  app.getObject('filter_gender', 'jmfUaPt');
+  app.getObject('filter_startstationid', 'qyyHuB');
+  app.getObject('filter_endstationid', 'twcuB');
 
   //create cubes and lists -- inserted here --
 
