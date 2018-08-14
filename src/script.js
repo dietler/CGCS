@@ -51,7 +51,9 @@ require(['js/qlik'], function(qlik) {
   var app = qlik.openApp('ipc-template-bootstrap.qvf', config);
 
   //get objects -- inserted here --
+  app.getObject('chart_popular', 'ePgPxck');
   app.getObject('chart_duration', 'qrPkAT');
+
   app.getObject('filter_bikeid', 'JMSFuZf');
   app.getObject('filter_usertype', 'RpBJx');
   app.getObject('filter_gender', 'jmfUaPt');
