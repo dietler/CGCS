@@ -19,7 +19,7 @@
 }
 
 .navbar-brand {
-  background-image: url("assets/img/ipc_small.png");
+  background-image: url('assets/img/ipc_small.png');
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-position-x: 10px;
@@ -27,7 +27,7 @@
 }
 
 #filters {
-  background-image: url("assets/img/filters.png");
+  background-image: url('assets/img/filters.png');
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-position-x: 0px;
@@ -67,7 +67,7 @@
   padding: 20px;
   margin: 0;
   width: 100%;
-  background-image: url("assets/img/x.png");
+  background-image: url('assets/img/x.png');
   background-repeat: no-repeat;
   background-position: 90% 50%;
   cursor: pointer;

@@ -48,10 +48,7 @@ require(['js/qlik'], function(qlik) {
 
   //callbacks -- inserted here --
   //open apps -- inserted here --
-  var app = qlik.openApp(
-    'FEMA Disaster Assistance Analysis (June 2018) (App Load).qvf',
-    config
-  );
+  var app = qlik.openApp('ipc-template-bootstrap.qvf', config);
 
   //get objects -- inserted here --
   app.getObject('kpi_project_amount', '7b6b4b28-80e5-4c6e-8eb4-928d618e58c3');

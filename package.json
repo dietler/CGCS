@@ -1,21 +1,21 @@
 {
-  "name": "ipc-mashup-bootstrap",
+  "name": "ipc-template-bootstrap",
   "version": "1.0.0",
   "description": "",
-  "main": "ipc-mashup-bootstrap.html",
+  "main": "ipc-template-bootstrap.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dietler/ipc-mashup-bootstrap.git"
+    "url": "git+https://github.com/dietler/ipc-template-bootstrap.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dietler/ipc-mashup-bootstrap/issues"
+    "url": "https://github.com/dietler/ipc-template-bootstrap/issues"
   },
-  "homepage": "https://github.com/dietler/ipc-mashup-bootstrap#readme",
+  "homepage": "https://github.com/dietler/ipc-template-bootstrap#readme",
   "dependencies": {
     "npm": "^6.1.0"
   },
