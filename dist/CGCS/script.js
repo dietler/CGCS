@@ -48,13 +48,17 @@ require(['js/qlik'], function(qlik) {
 
   //callbacks -- inserted here --
   //open apps -- inserted here --
-  var app = qlik.openApp('CGCS2.qvf', config);
+  var app = qlik.openApp('CGCS.qvf', config);
 
   //get objects -- inserted here --
   app.getObject('table_top', 'RE');
-  app.getObject('table_bottom', 'etDP');
+  app.getObject('table_bottom', 'WYuH');
+  app.getObject('table_unranked', 'XbeZCn');
   app.getObject('filter_functionalarea', 'hYzhmVq');
+  app.getObject('filter_functionalarea2', 'mwTBpn');
+  app.getObject('filter_metric', 'pJAfD');
   app.getObject('title_districtname', 'EMXvy');
+  app.getObject('chart_metricvs', 'avBKzh');
 
   //create cubes and lists -- inserted here --
 
