@@ -48,7 +48,7 @@ require(['js/qlik'], function(qlik) {
 
   //callbacks -- inserted here --
   //open apps -- inserted here --
-  var app = qlik.openApp('CGCS.qvf', config);
+  var app = qlik.openApp('55aea3ea-90b0-4249-8a80-2901ed9a0b42', config); //CGCS.qvf | 55aea3ea-90b0-4249-8a80-2901ed9a0b42
 
   //get objects -- inserted here --
   app.getObject('table_top', 'RE');
@@ -68,16 +68,16 @@ require(['js/qlik'], function(qlik) {
     $('.current-selections-placeholder span').css('display', 'inline-block');
   }
 
-  // $(".navbar-nav a, .nav-tabs a").click(function() {
-  //   qlik.resize();
-  // });
-
-  $(document).ready(function() {
-    $('.sidebarToggle').on('click', function() {
-      $('#sidebar').toggleClass('active');
-      qlik.resize();
-    });
+  $('.navbar-nav a').click(function() {
+    qlik.resize();
   });
+
+  // $(document).ready(function() {
+  //   $('.sidebarToggle').on('click', function() {
+  //     $('#sidebar').toggleClass('active');
+  //     qlik.resize();
+  //   });
+  // });
 
   // Get Parameter
   var getUrlParameter = function getUrlParameter(sParam) {

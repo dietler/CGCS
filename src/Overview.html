@@ -54,10 +54,10 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active">
-              <a href="Overview.html">Overview</a>
+              <a href="#overview" aria-controls="map" role="tab" data-toggle="tab">Overview</a>
             </li>
             <li>
-              <a href="MetricDetail.html">Metric Detail</a>
+              <a href="#metricdetail" aria-controls="metricdetail" role="tab" data-toggle="tab">Metric Detail</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -86,31 +86,47 @@
         <div id="title_districtname" class="kpi-color qvplaceholder center-block" style="height: 60px;"></div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div id="filter_functionalarea" class="kpi-color qvplaceholder center-block" style="height: 440px;"></div>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="overview">
+        <div class="row">
+          <div class="col-md-2">
+            <div id="filter_functionalarea" class="kpi-color qvplaceholder center-block" style="height: 440px;"></div>
+          </div>
+          <div class="col-md-10">
+            <div id="table_top" class="kpi-color qvplaceholder center-block" style="height: 340px;"></div>
+            <div id="table_bottom" class="kpi-color qvplaceholder center-block" style="height: 340px;"></div>
+            <div id="table_unranked" class="kpi-color qvplaceholder center-block" style="height: 340px;"></div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-10">
-        <div id="table_top" class="kpi-color qvplaceholder center-block" style="height: 340px;"></div>
-        <div id="table_bottom" class="kpi-color qvplaceholder center-block" style="height: 340px;"></div>
-        <div id="table_unranked" class="kpi-color qvplaceholder center-block" style="height: 340px;"></div>
+      <div role="tabpanel" class="tab-pane active" id="metricdetail">
+        <div class="row">
+          <div class="col-md-2">
+            <div id="filter_functionalarea2" class="kpi-color qvplaceholder center-block" style="height: 440px;"></div>
+          </div>
+          <div class="col-md-2">
+            <div id="filter_metric" class="kpi-color qvplaceholder center-block" style="height: 700px;"></div>
+          </div>
+          <div class="col-md-8">
+            <div id="chart_metricvs" class="kpi-color qvplaceholder center-block" style="height: 700px;"></div>
+          </div>
+        </div>
       </div>
+
     </div>
+    <!-- /container -->
 
-  </div>
-  <!-- /container -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103862070-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103862070-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-103862070-3');
-  </script>
+      gtag('config', 'UA-103862070-3');
+    </script>
 
 </body>
 
