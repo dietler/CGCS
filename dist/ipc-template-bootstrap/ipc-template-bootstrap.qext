@@ -1,8 +1,8 @@
 {
 	"type": "mashup",
-	"name": "ipc-template-bootstrap",
+	"name": "CGCS",
 	"description": "",
-	"homepage" : "ipc-template-bootstrap.html",
+	"homepage" : "CGCS.html",
 	"author": "Andy Dietler",
     "version" : "1.0.0",
     "preview" : "preview.png",

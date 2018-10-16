@@ -48,17 +48,13 @@ require(['js/qlik'], function(qlik) {
 
   //callbacks -- inserted here --
   //open apps -- inserted here --
-  var app = qlik.openApp('ipc-template-bootstrap.qvf', config);
+  var app = qlik.openApp('CGCS2.qvf', config);
 
   //get objects -- inserted here --
-  app.getObject('chart_popular', 'ePgPxck');
-  app.getObject('chart_duration', 'qrPkAT');
-
-  app.getObject('filter_bikeid', 'JMSFuZf');
-  app.getObject('filter_usertype', 'RpBJx');
-  app.getObject('filter_gender', 'jmfUaPt');
-  app.getObject('filter_startstationid', 'qyyHuB');
-  app.getObject('filter_endstationid', 'twcuB');
+  app.getObject('table_top', 'RE');
+  app.getObject('table_bottom', 'etDP');
+  app.getObject('filter_functionalarea', 'hYzhmVq');
+  app.getObject('title_districtname', 'EMXvy');
 
   //create cubes and lists -- inserted here --
 
@@ -77,6 +73,28 @@ require(['js/qlik'], function(qlik) {
       $('#sidebar').toggleClass('active');
       qlik.resize();
     });
+  });
+
+  // Get Parameter
+  var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+      sURLVariables = sPageURL.split('&'),
+      sParameterName,
+      i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+      sParameterName = sURLVariables[i].split('=');
+
+      if (sParameterName[0] === sParam) {
+        return sParameterName[1] === undefined ? true : sParameterName[1];
+      }
+    }
+  };
+
+  //Pass District ID
+  $().ready(function() {
+    app.field('District ID').clear();
+    app.field('District ID').selectMatch(getUrlParameter('district'), true);
   });
 
   // $().ready(function() {

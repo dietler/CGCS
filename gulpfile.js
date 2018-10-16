@@ -4,8 +4,8 @@ const replace = require('gulp-token-replace');
 const userHome = require('user-home');
 
 // Mashup name
-const mashup = 'ipc-template-bootstrap';
-const qvffile = 'ipc-template-bootstrap';
+const mashup = 'CGCS';
+const qvffile = 'CGCS';
 // Local Extension Path
 const extensionpath = userHome + '\\Documents\\Qlik\\Sense\\Extensions';
 // Local App Path

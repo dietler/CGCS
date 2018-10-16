@@ -1,0 +1,15 @@
+{
+	"type": "mashup",
+	"name": "CGCS",
+	"description": "",
+	"homepage" : "Entry.html",
+	"author": "Andy Dietler",
+    "version" : "1.0.0",
+    "preview" : "preview.png",
+    "keywords" : "qlik-sense, mashup, dashboard",
+	"license" : "",
+	"repository" : "",
+	"dependencies": {
+		"qlik-sense": ">=3.0.x"
+	}
+}

@@ -48,7 +48,7 @@ require(['js/qlik'], function(qlik) {
 
   //callbacks -- inserted here --
   //open apps -- inserted here --
-  var app = qlik.openApp('ipc-template-bootstrap.qvf', config);
+  var app = qlik.openApp('CGCS.qvf', config);
 
   //get objects -- inserted here --
   app.getObject('chart_popular', 'ePgPxck');

@@ -1,21 +1,21 @@
 {
-  "name": "ipc-template-bootstrap",
+  "name": "CGCS",
   "version": "1.0.0",
   "description": "",
-  "main": "ipc-template-bootstrap.html",
+  "main": "CGCS.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dietler/ipc-template-bootstrap.git"
+    "url": "git+https://github.com/dietler/CGCS.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dietler/ipc-template-bootstrap/issues"
+    "url": "https://github.com/dietler/CGCS/issues"
   },
-  "homepage": "https://github.com/dietler/ipc-template-bootstrap#readme",
+  "homepage": "https://github.com/dietler/CGCS#readme",
   "dependencies": {
     "npm": "^6.1.0"
   },

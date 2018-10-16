@@ -1,5 +1,8 @@
-ipc-template-bootstrap.qext;
-ipc-template-bootstrap.html;
+CGCS.qext;
+CGCS.html;
+District.html;
+Entry.html;
+Overview.html;
 script.js;
 style.css;
 preview.png;
