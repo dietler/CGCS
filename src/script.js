@@ -59,6 +59,8 @@ require(['js/qlik'], function(qlik) {
   app.getObject('filter_metric', 'pJAfD');
   app.getObject('title_districtname', 'EMXvy');
   app.getObject('chart_metricvs', 'avBKzh');
+  app.getObject('chart_score', 'ZUjSX');
+  app.getObject('chart_reporting', 'mXzUPJ');
 
   //create cubes and lists -- inserted here --
 

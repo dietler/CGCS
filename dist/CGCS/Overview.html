@@ -54,7 +54,10 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active">
-              <a href="#overview" aria-controls="map" role="tab" data-toggle="tab">Overview</a>
+              <a href="#overall" aria-controls="map" role="tab" data-toggle="tab">Overall</a>
+            </li>
+            <li>
+              <a href="#topbottom" aria-controls="map" role="tab" data-toggle="tab">Top/Bottom</a>
             </li>
             <li>
               <a href="#metricdetail" aria-controls="metricdetail" role="tab" data-toggle="tab">Metric Detail</a>
@@ -87,7 +90,17 @@
       </div>
     </div>
     <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="overview">
+      <div role="tabpanel" class="tab-pane active" id="overall">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="chart_score" class="kpi-color qvplaceholder center-block" style="height: 700px;"></div>
+          </div>
+          <div class="col-md-6">
+            <div id="chart_reporting" class="kpi-color qvplaceholder center-block" style="height: 700px;"></div>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane active" id="topbottom">
         <div class="row">
           <div class="col-md-2">
             <div id="filter_functionalarea" class="kpi-color qvplaceholder center-block" style="height: 440px;"></div>
