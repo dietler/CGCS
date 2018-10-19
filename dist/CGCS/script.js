@@ -48,7 +48,8 @@ require(['js/qlik'], function(qlik) {
 
   //callbacks -- inserted here --
   //open apps -- inserted here --
-  var app = qlik.openApp('55aea3ea-90b0-4249-8a80-2901ed9a0b42', config); //CGCS.qvf | 55aea3ea-90b0-4249-8a80-2901ed9a0b42
+  var app = qlik.openApp('55aea3ea-90b0-4249-8a80-2901ed9a0b42', config);
+  // var app = qlik.openApp('CGCS.qvf', config);
 
   //get objects -- inserted here --
   app.getObject('table_top', 'RE');
@@ -63,6 +64,7 @@ require(['js/qlik'], function(qlik) {
   app.getObject('chart_avg_score_nopenalty', 'DuSXWf');
   app.getObject('chart_overall_score', 'ZUjSX');
   app.getObject('chart_overall_reporting', 'mXzUPJ');
+  app.getObject('chart_ranking', 'pDNeEUD');
 
   //create cubes and lists -- inserted here --
 
