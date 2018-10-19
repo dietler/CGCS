@@ -92,15 +92,53 @@
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane active" id="overall">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist" style="margin-bottom: 40px;">
+              <li role="presentation" class="active">
+                <a href="#tab_avg_score" aria-controls="home" role="tab" data-toggle="tab">Average Score by Functional
+                  Area</a>
+              </li>
+              <li role="presentation">
+                <a href="#tab_avg_score_nopenalty" aria-controls="profile" role="tab" data-toggle="tab">Average Score
+                  by
+                  Functional Area w/o Penalty for Unreported Metrics</a>
+              </li>
+              <li role="presentation">
+                <a href="#tab_overall_score" aria-controls="messages" role="tab" data-toggle="tab">Overall Score by
+                  Functional Area</a>
+              </li>
+              <li role="presentation">
+                <a href="#tab_overall_reporting" aria-controls="messages" role="tab" data-toggle="tab">Overall
+                  Reporting by
+                  Functional Area</a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="tab_avg_score">
+                <div id="chart_avg_score" class="qvplaceholder" style="height: 700px;"></div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="tab_avg_score_nopenalty">
+                <div id="chart_avg_score_nopenalty" class="qvplaceholder" style="height: 700px;"></div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="tab_overall_score">
+                <div id="chart_overall_score" class="qvplaceholder" style="height: 700px;"></div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="tab_overall_reporting">
+                <div id="chart_overall_reporting" class="qvplaceholder" style="height: 700px;"></div>
+              </div>
+            </div>
+
             <div id="chart_score" class="kpi-color qvplaceholder center-block" style="height: 700px;"></div>
+
           </div>
-          <div class="col-md-6">
+          <!-- <div class="col-md-6">
             <div id="chart_reporting" class="kpi-color qvplaceholder center-block" style="height: 700px;"></div>
-          </div>
+          </div> -->
         </div>
       </div>
-      <div role="tabpanel" class="tab-pane active" id="topbottom">
+      <div role="tabpanel" class="tab-pane" id="topbottom">
         <div class="row">
           <div class="col-md-2">
             <div id="filter_functionalarea" class="kpi-color qvplaceholder center-block" style="height: 440px;"></div>
@@ -112,7 +150,7 @@
           </div>
         </div>
       </div>
-      <div role="tabpanel" class="tab-pane active" id="metricdetail">
+      <div role="tabpanel" class="tab-pane" id="metricdetail">
         <div class="row">
           <div class="col-md-2">
             <div id="filter_functionalarea2" class="kpi-color qvplaceholder center-block" style="height: 440px;"></div>

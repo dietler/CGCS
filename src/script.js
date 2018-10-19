@@ -59,8 +59,10 @@ require(['js/qlik'], function(qlik) {
   app.getObject('filter_metric', 'pJAfD');
   app.getObject('title_districtname', 'EMXvy');
   app.getObject('chart_metricvs', 'avBKzh');
-  app.getObject('chart_score', 'ZUjSX');
-  app.getObject('chart_reporting', 'mXzUPJ');
+  app.getObject('chart_avg_score', 'GRckFN');
+  app.getObject('chart_avg_score_nopenalty', 'DuSXWf');
+  app.getObject('chart_overall_score', 'ZUjSX');
+  app.getObject('chart_overall_reporting', 'mXzUPJ');
 
   //create cubes and lists -- inserted here --
 
@@ -70,7 +72,7 @@ require(['js/qlik'], function(qlik) {
     $('.current-selections-placeholder span').css('display', 'inline-block');
   }
 
-  $('.navbar-nav a').click(function() {
+  $('.navbar-nav a, .nav-tabs a').click(function() {
     qlik.resize();
   });
 
