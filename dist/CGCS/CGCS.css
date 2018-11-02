@@ -4,6 +4,7 @@ body {
   background-image: url('assets/img/highschool2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: darkgreen;
 }
 
 /* Logo */
@@ -71,6 +72,40 @@ body {
   position: absolute;
   top: 400px;
   right: 40px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: cover;
+  }
+  .ipclink,
+  .cgcslink,
+  .districtlink {
+    display: none;
+  }
+  /* .second_logo,
+  .container-fluid {
+    background: none;
+  } */
+  #entry {
+    width: 100%;
+    margin-top: 100px;
+  }
+  #entry .text {
+    font-size: 20px;
+  }
+  .container-fluid {
+    background-size: 10em;
+    background-position: 12px 20px;
+  }
+  .second_logo {
+    background-size: 8em;
+    background-position: right 20px top 10px;
+  }
+  .districtname {
+    font-size: 50% !important;
+    background-color: pink !important;
+  }
 }
 
 /* Circle */

@@ -65,6 +65,7 @@ require(['js/qlik'], function(qlik) {
   app.getObject('chart_overall_score', 'ZUjSX');
   app.getObject('chart_overall_reporting', 'mXzUPJ');
   app.getObject('chart_ranking', 'pDNeEUD');
+  app.getObject('button_clearselections', 'JhqfNbm');
 
   //create cubes and lists -- inserted here --
 
@@ -74,7 +75,7 @@ require(['js/qlik'], function(qlik) {
     $('.current-selections-placeholder span').css('display', 'inline-block');
   }
 
-  $('.navbar-nav a, .nav-tabs a').click(function() {
+  $('.navbar-nav a, .nav-pills a').click(function() {
     qlik.resize();
   });
 

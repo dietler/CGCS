@@ -1,0 +1,48 @@
+.nav-pills > li > a {
+  background-color: #dff9fb;
+}
+.nav-pills > li {
+  margin-bottom: 5px;
+}
+#pillnav {
+  margin-bottom: 20px;
+}
+#footer {
+  margin-top: 20px;
+  text-align: right;
+  background-color: #f2f2f2;
+}
+#footer a {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  #pillnav {
+    margin-bottom: 10px;
+  }
+  .nav-pills > li > a {
+    padding: 7px;
+  }
+  #title_districtname font {
+    font-size: 120%;
+  }
+  #chart_ranking,
+  #chart_avg_score_nopenalty,
+  #chart_avg_score,
+  #chart_overall_reporting,
+  #chart_metricvs {
+    height: 350px !important;
+  }
+  #filter_functionalarea,
+  #filter_functionalarea2,
+  #filter_metric {
+    height: 120px !important;
+  }
+  #footer {
+    margin-top: 12px;
+    font-size: 80%;
+  }
+  #footer img {
+    height: 27px;
+  }
+}
