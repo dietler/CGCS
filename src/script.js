@@ -48,7 +48,7 @@ require(['js/qlik'], function(qlik) {
 
   //callbacks -- inserted here --
   //open apps -- inserted here --
-  var app = qlik.openApp('55aea3ea-90b0-4249-8a80-2901ed9a0b42', config);
+  var app = qlik.openApp('a55f796a-ec04-4adb-bb3a-6911e731a5b8', config);
   // var app = qlik.openApp('CGCS.qvf', config);
 
   //get objects -- inserted here --
